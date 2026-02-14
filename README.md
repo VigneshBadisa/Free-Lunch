@@ -1,3 +1,9 @@
+## Acknowledgment
+
+This project is based on FIPE standalone package (https://www.github.com/eminyous/fipe).
+Licensed under MIT License.
+This repository contains modifications and improvements.
+
 # FIPE: Functionally Identical Pruning of Ensembles
 
 [![PyPI](https://img.shields.io/pypi/v/fipepy
