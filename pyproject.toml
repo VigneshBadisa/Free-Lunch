@@ -1,0 +1,62 @@
+[build-system]
+requires = ["setuptools >= 61.0", "wheel", "setuptools_scm[toml]"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "fipepy"
+dynamic = ["version"]
+description = "A simple Python package for Funcationally-Identical Pruning of Ensemble models"
+readme.content-type = "text/markdown"
+readme.file = "README.md"
+requires-python = ">=3.12"
+license = {file = "LICENSE"}
+authors = [
+    { name = "Youssouf Emine", email = "youssouf.emine@polymtl.ca" },
+    { name = "Alexandre Forel", email = "alexandre.forel@polymtl.ca" }
+]
+
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Topic :: Software Development :: Libraries",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Programming Language :: Python :: 3 :: Only",
+]
+
+dependencies = [
+    "numpy",
+    "gurobipy",
+    "scikit-learn",
+    "pandas",
+    "lightgbm",
+    "xgboost",
+    "pyscipopt",
+]
+
+optional-dependencies.dev = [
+    "coverage",
+    "pytest",
+    "pytest-cov",
+    "ruff",
+    "tox",
+]
+
+optional-dependencies.test = [
+    "coverage",
+    "pytest",
+    "pytest-cov",
+    "ruff",
+    "tox",
+]
+
+urls.Homepage = "https://github.com/eminyous/fipe"
+urls.Repository = "https://github.com/eminyous/fipe"
+urls.Issues = "https://github.com/eminyous/fipe/issues"
+
+[tool.setuptools_scm]
+
+[tool.pyproject-fmt]
+max_supported_python = "3.13"
